@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QEEzbRT0Dwmu6rvRjnc4o3EC6d/QJlYGZJh8gZDhi6vpdjrkAauwNen4woo6GcrRHMfxhCAEG2yjkvCQ+8cSZw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Documents\\Projects\\liberaNet\\liberaNet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

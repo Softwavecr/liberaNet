@@ -10,11 +10,14 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using System.Text.Json;
+
 
 namespace liberaNet
-{
+{ 
     public class Startup
     {
+        List<Street> Streets = new List<Street>();
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -25,7 +28,7 @@ namespace liberaNet
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers();//.AddNewtonsoftJson();//jairo
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +44,10 @@ namespace liberaNet
             app.UseRouting();
 
             app.UseAuthorization();
+
+            //app.UseSession();
+
+            //app.Properties.Add(Streets.ToDictionary(x => x, x => x));
 
             app.UseEndpoints(endpoints =>
             {
